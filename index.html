@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ============================================
+       Barbearia do Cazé — Site Profissional de Apresentação.
+       Desenvolvido com HTML5, CSS3 e JavaScript puro
+       By m4chado7 - @m4chado7.web nas redes. @m4chado7 no github.com
+       ============================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>Barbearia do Cazé — Cortes Modernos, Barba Impecável e Atendimento Premium</title>
+  <meta name="description" content="Barbearia do Cazé: cortes modernos, barba impecável e atendimento de primeira. Agende seu horário e transforme seu estilo.">
+  <meta name="keywords" content="barbearia, corte masculino, barba, pigmentação, sobrancelha, estilo, Cazé, barbeiro profissional">
+  <meta name="author" content="Barbearia do Cazé">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Barbearia do Cazé — Seu estilo começa aqui">
+  <meta property="og:description" content="Cortes modernos, barba impecável e atendimento de primeira. Agende agora!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ladingbarbeariacaze.vercel.app">
+  <meta property="og:image" content="assets/images/bc-ogimage.png">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon180.png">
+
+  <!-- Google Fonts — Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVBAR — Menu de Navegação Fixo
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__container container">
+      <!-- Logo -->
+    <a href="#hero" class="navbar__logo">
+      <img src="assets/icons/favicon32.png" alt="Logo Barbearia do Cazé" class="navbar__logo-img">
+      <span class="navbar__logo-text">Barbearia <span class="highlight">do Cazé</span></span>
+    </a>
+
+      <!-- Menu Desktop -->
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#hero" class="navbar__link active">Início</a></li>
+        <li><a href="#sobre" class="navbar__link">Sobre</a></li>
+        <li><a href="#servicos" class="navbar__link">Serviços</a></li>
+        <li><a href="#galeria" class="navbar__link">Galeria</a></li>
+        <li><a href="#diferenciais" class="navbar__link">Diferenciais</a></li>
+        <li><a href="#depoimentos" class="navbar__link">Depoimentos</a></li>
+        <li><a href="#contato" class="navbar__link">Contato</a></li>
+      </ul>
+
+      <!-- Botão CTA Navbar -->
+      <a href="https://wa.me/5521971984478" target="_blank" class="navbar__cta btn btn--primary btn--sm">
+        Agendar Agora
+      </a>
+
+      <!-- Hamburger Mobile -->
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu Mobile Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Fechar menu">&times;</button>
+    <ul class="mobile-menu__list">
+      <li><a href="#hero" class="mobile-menu__link">Início</a></li>
+      <li><a href="#sobre" class="mobile-menu__link">Sobre</a></li>
+      <li><a href="#servicos" class="mobile-menu__link">Serviços</a></li>
+      <li><a href="#galeria" class="mobile-menu__link">Galeria</a></li>
+      <li><a href="#diferenciais" class="mobile-menu__link">Diferenciais</a></li>
+      <li><a href="#depoimentos" class="mobile-menu__link">Depoimentos</a></li>
+      <li><a href="#contato" class="mobile-menu__link">Contato</a></li>
+    </ul>
+    <a href="https://wa.me/5521971984478" target="_blank" class="btn btn--primary mobile-menu__cta">Agendar Agora</a>
+  </div>
+
+  <!-- ============================================
+       HERO — Seção Principal
+       ============================================ -->
+  <section class="hero" id="hero">
+    <!-- Partículas decorativas de fundo -->
+    <div class="hero__particles">
+      <span class="hero__particle hero__particle--1"></span>
+      <span class="hero__particle hero__particle--2"></span>
+      <span class="hero__particle hero__particle--3"></span>
+      <span class="hero__particle hero__particle--4"></span>
+    </div>
+
+    <div class="hero__container container">
+      <!-- Lado Esquerdo — Texto -->
+      <div class="hero__content" id="heroContent">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Barbearia Premium. Preço que cabe no seu bolso.
+        </div>
+        <h1 class="hero__title">
+          Seu estilo <br>
+          <span class="gradient-text">começa aqui.</span>
+        </h1>
+        <p class="hero__subtitle">
+          Cortes modernos, barba impecável e atendimento de primeira na
+          <strong>Barbearia do Cazé</strong>. Venha viver a experiência.
+        </p>
+        <div class="hero__buttons">
+          <a href="https://wa.me/5521971984478?text=Olá! Gostaria de agendar um horário na Barbearia do Cazé."
+             target="_blank"
+             class="btn btn--primary btn--lg">
+            <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Agendar pelo WhatsApp
+          </a>
+          <a href="#galeria" class="btn btn--outline btn--lg">
+            Ver Cortes
+            <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mini stats -->
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number">1000+</span>
+            <span class="hero__stat-label">Cortes</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">5 ★</span>
+            <span class="hero__stat-label">Avaliação</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">500+</span>
+            <span class="hero__stat-label">Clientes</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lado Direito — Imagem -->
+      <div class="hero__image-wrapper" id="heroImage">
+        <div class="hero__image-glow"></div>
+        <div class="hero__image-card">
+          <!-- Imagem local -->
+          <img src="assets/images/images2.jpg"
+               alt="Barbeiro profissional trabalhando na Barbearia do Cazé"
+               class="hero__image"
+               loading="eager">
+          <div class="hero__image-overlay"></div>
+        </div>
+  </section>
+
+  <!-- ============================================
+       SOBRE — História da Barbearia
+       ============================================ -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <!-- Cabeçalho da seção -->
+      <div class="section-header fade-in">
+        <span class="section-tag">Quem Somos</span>
+        <h2 class="section-title">Conheça a <span class="gradient-text">Barbearia do Cazé</span></h2>
+        <p class="section-subtitle">
+          Mais do que uma barbearia, somos um espaço dedicado ao estilo masculino,
+          onde tradição e modernidade se encontram.
+        </p>
+      </div>
+
+      <div class="sobre__grid">
+        <!-- Texto -->
+        <div class="sobre__content fade-in">
+          <h3 class="sobre__heading">7 anos transformando estilos e elevando a autoestima dos nossos clientes</h3>
+          <p class="sobre__text">
+            A <strong>Barbearia do Cazé</strong> nasceu da paixão por cortes perfeitos e pelo
+            cuidado com cada detalhe. Desde 2019, oferecemos um atendimento personalizado
+            em um ambiente climatizado e sofisticado, utilizando produtos de primeira linha
+            e técnicas atualizadas.
+          </p>
+          <p class="sobre__text">
+            Nossa equipe de profissionais experientes está sempre em busca das últimas
+            tendências para garantir que você saia daqui com o melhor visual possível.
+          </p>
+
+          <!-- Checklist -->
+          <ul class="sobre__checklist">
+            <li class="sobre__check-item">
+              <span class="sobre__check-icon">✓</span>
+              Atendimento personalizado e exclusivo
+            </li>
+            <li class="sobre__check-item">
+              <span class="sobre__check-icon">✓</span>
+              Ambiente climatizado e sofisticado
+            </li>
+            <li class="sobre__check-item">
+              <span class="sobre__check-icon">✓</span>
+              Produtos de qualidade premium
+            </li>
+            <li class="sobre__check-item">
+              <span class="sobre__check-icon">✓</span>
+              Profissionais experientes e atualizados
+            </li>
+          </ul>
+        </div>
+
+        <!-- Imagem + Stats -->
+        <div class="sobre__visual fade-in">
+          <div class="sobre__image-wrapper">
+            <!-- Imagem local -->
+            <img src="assets/images/sobre-barbearia.jpg"
+                 alt="Interior da Barbearia do Cazé"
+                 class="sobre__image"
+                 loading="lazy">
+          </div>
+
+          <!-- Cards de estatísticas -->
+          <div class="sobre__stats">
+            <div class="stat-card" data-target="1000">
+              <span class="stat-card__number counter">0</span>
+              <span class="stat-card__suffix">+</span>
+              <span class="stat-card__label">Cortes Realizados</span>
+            </div>
+            <div class="stat-card" data-target="7">
+              <span class="stat-card__number counter">0</span>
+              <span class="stat-card__suffix"> anos</span>
+              <span class="stat-card__label">De Experiência</span>
+            </div>
+            <div class="stat-card" data-target="500">
+              <span class="stat-card__number counter">0</span>
+              <span class="stat-card__suffix">+</span>
+              <span class="stat-card__label">Clientes Satisfeitos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVIÇOS — Cards de Serviços
+       ============================================ -->
+  <section class="section servicos" id="servicos">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">O que oferecemos</span>
+        <h2 class="section-title">Nossos <span class="gradient-text">Serviços</span></h2>
+        <p class="section-subtitle">
+          Cada serviço é executado com precisão, cuidado e atenção aos detalhes.
+        </p>
+      </div>
+
+      <div class="servicos__grid">
+        <!-- Card 1 — Corte Masculino -->
+        <div class="servico-card fade-in">
+          <div class="servico-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+              <line x1="20" y1="6" x2="9" y2="6"/><line x1="20" y1="18" x2="9" y2="18"/>
+              <line x1="15" y1="6" x2="15" y2="18"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">Corte Masculino</h3>
+          <p class="servico-card__desc">
+            Cortes modernos e clássicos, executados com precisão e estilo. Inclui lavagem e finalização.
+          </p>
+          <span class="servico-card__price">R$ 45,00</span>
+          <a href="https://wa.me/5521971984478?text=Olá! Gostaria de agendar um Corte Masculino."
+             target="_blank"
+             class="btn btn--primary btn--sm servico-card__btn">
+            Agendar
+          </a>
+        </div>
+
+        <!-- Card 2 — Barba -->
+        <div class="servico-card fade-in">
+          <div class="servico-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 3v7a6 6 0 006 6 6 6 0 006-6V3"/>
+              <line x1="4" y1="3" x2="20" y2="3"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">Barba</h3>
+          <p class="servico-card__desc">
+            Modelagem, alinhamento e hidratação completa para uma barba impecável e bem cuidada.
+          </p>
+          <span class="servico-card__price">R$ 35,00</span>
+          <a href="https://wa.me/5521971984478?text=Olá! Gostaria de agendar uma Barba."
+             target="_blank"
+             class="btn btn--primary btn--sm servico-card__btn">
+            Agendar
+          </a>
+        </div>
+
+        <!-- Card 3 — Pigmentação -->
+        <div class="servico-card fade-in">
+          <div class="servico-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">Pigmentação</h3>
+          <p class="servico-card__desc">
+            Técnica avançada de pigmentação capilar para um visual mais denso e uniforme.
+          </p>
+          <span class="servico-card__price">R$ 120,00</span>
+          <a href="https://wa.me/5521971984478?text=Olá! Gostaria de agendar uma Pigmentação."
+             target="_blank"
+             class="btn btn--primary btn--sm servico-card__btn">
+            Agendar
+          </a>
+        </div>
+
+        <!-- Card 4 — Sobrancelha -->
+        <div class="servico-card fade-in">
+          <div class="servico-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">Sobrancelha</h3>
+          <p class="servico-card__desc">
+            Design de sobrancelha masculina com técnicas precisas para harmonizar seu rosto.
+          </p>
+          <span class="servico-card__price">R$ 25,00</span>
+          <a href="https://wa.me/5521971984478?text=Olá! Gostaria de agendar uma Sobrancelha."
+             target="_blank"
+             class="btn btn--primary btn--sm servico-card__btn">
+            Agendar
+          </a>
+        </div>
+
+        <!-- Card 5 — Combo Corte + Barba -->
+        <div class="servico-card servico-card--destaque fade-in">
+          <div class="servico-card__badge">Mais Pedido</div>
+          <div class="servico-card__icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <h3 class="servico-card__title">Combo Corte + Barba</h3>
+          <p class="servico-card__desc">
+            O pacote completo! Corte moderno + barba alinhada com produtos premium e finalização especial.
+          </p>
+          <span class="servico-card__price servico-card__price--combo">
+            <span class="servico-card__price-old">R$ 80,00</span>
+            R$ 65,00
+          </span>
+          <a href="https://wa.me/5521971984478?text=Olá! Gostaria de agendar o Combo Corte + Barba."
+             target="_blank"
+             class="btn btn--primary btn--sm servico-card__btn">
+            Agendar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       GALERIA — Nossos Cortes
+       ============================================ -->
+  <section class="section galeria" id="galeria">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Portfólio</span>
+        <h2 class="section-title">Nossos <span class="gradient-text">Cortes</span></h2>
+        <p class="section-subtitle">
+          Confira alguns dos nossos trabalhos e inspire-se para o seu próximo visual.
+        </p>
+      </div>
+
+      <!-- Grid de imagens — carrega de /images/cortes/ -->
+      <div class="galeria__grid" id="galeriaGrid">
+        <div class="galeria__item fade-in" data-index="0">
+          <img src="assets/images/corte1.jpg" alt="Corte masculino moderno — Barbearia do Cazé" loading="lazy">
+          <div class="galeria__overlay">
+            <span class="galeria__zoom-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="galeria__item fade-in" data-index="1">
+          <img src="assets/images/corte2.jpg" alt="Corte degradê — Barbearia do Cazé" loading="lazy">
+          <div class="galeria__overlay">
+            <span class="galeria__zoom-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="galeria__item fade-in" data-index="2">
+          <img src="assets/images/corte3.jpg" alt="Barba modelada — Barbearia do Cazé" loading="lazy">
+          <div class="galeria__overlay">
+            <span class="galeria__zoom-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="galeria__item fade-in" data-index="3">
+          <img src="assets/images/corte4.jpg" alt="Corte social — Barbearia do Cazé" loading="lazy">
+          <div class="galeria__overlay">
+            <span class="galeria__zoom-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="galeria__item fade-in" data-index="4">
+          <img src="assets/images/corte5.jpg" alt="Corte com risquinho — Barbearia do Cazé" loading="lazy">
+          <div class="galeria__overlay">
+            <span class="galeria__zoom-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="galeria__item fade-in" data-index="5">
+          <img src="assets/images/corte6.jpg" alt="Corte moderno texturizado — Barbearia do Cazé" loading="lazy">
+          <div class="galeria__overlay">
+            <span class="galeria__zoom-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">&times;</button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="Anterior">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+    <button class="lightbox__next" id="lightboxNext" aria-label="Próximo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+    <div class="lightbox__content" id="lightboxContent">
+      <img src="" alt="Corte em destaque" class="lightbox__image" id="lightboxImage">
+      <span class="lightbox__counter" id="lightboxCounter"></span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       DIFERENCIAIS
+       ============================================ -->
+  <section class="section diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Por que nos escolher</span>
+        <h2 class="section-title">Nossos <span class="gradient-text">Diferenciais</span></h2>
+        <p class="section-subtitle">
+          Cada detalhe foi pensado para oferecer a melhor experiência possível.
+        </p>
+      </div>
+
+      <div class="diferenciais__grid">
+        <div class="diferencial-card fade-in">
+          <div class="diferencial-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="diferencial-card__title">Atendimento VIP</h3>
+          <p class="diferencial-card__desc">
+            Cada cliente é tratado de forma única e especial, com atenção total do barbeiro.
+          </p>
+        </div>
+
+        <div class="diferencial-card fade-in">
+          <div class="diferencial-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3 class="diferencial-card__title">Produtos Premium</h3>
+          <p class="diferencial-card__desc">
+            Utilizamos apenas as melhores marcas do mercado para cuidar do seu cabelo e barba.
+          </p>
+        </div>
+
+        <div class="diferencial-card fade-in">
+          <div class="diferencial-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="diferencial-card__title">Ambiente Confortável</h3>
+          <p class="diferencial-card__desc">
+            Espaço climatizado, com música ambiente, Wi-Fi e café cortesia para você relaxar.
+          </p>
+        </div>
+
+        <div class="diferencial-card fade-in">
+          <div class="diferencial-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3 class="diferencial-card__title">Agendamento Rápido</h3>
+          <p class="diferencial-card__desc">
+            Agende pelo WhatsApp em segundos. Sem filas, sem espera desnecessária.
+          </p>
+        </div>
+
+        <div class="diferencial-card fade-in">
+          <div class="diferencial-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="diferencial-card__title">Pontualidade</h3>
+          <p class="diferencial-card__desc">
+            Respeitamos o seu tempo. Seu horário é sagrado e garantimos a pontualidade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+     DEPOIMENTOS — Carrossel de Avaliações
+     ============================================ -->
+<section class="section depoimentos" id="depoimentos">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">O que dizem nossos clientes</span>
+      <h2 class="section-title">Feedbacks <span class="gradient-text">Reais</span></h2>
+      <p class="section-subtitle">
+        A satisfação dos nossos clientes é o nosso maior orgulho.
+      </p>
+    </div>
+
+    <!-- Carrossel -->
+    <div class="depoimentos__carousel fade-in" id="depoimentosCarousel" role="region" aria-roledescription="carousel" aria-label="Depoimentos de clientes">
+      <div class="depoimentos__track" id="depoimentosTrack">
+
+        <!-- Depoimento 1 -->
+        <div class="depoimento-card" role="group" aria-roledescription="slide" aria-label="1 de 6">
+          <div class="depoimento-card__header">
+            <img src="assets/images/avatar-padrao.svg" alt="Foto de Lucas Mendes" class="depoimento-card__avatar" loading="lazy">
+            <div class="depoimento-card__info">
+              <h4 class="depoimento-card__name">Lucas Mendes</h4>
+              <div class="depoimento-card__stars" aria-label="5 estrelas">★★★★★</div>
+            </div>
+          </div>
+          <blockquote class="depoimento-card__text">
+            "Melhor corte que já fiz na vida! Atendimento excelente, ambiente top e o barbeiro
+            entendeu exatamente o que eu queria. Recomendo demais!"
+          </blockquote>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="depoimento-card" role="group" aria-roledescription="slide" aria-label="2 de 6">
+          <div class="depoimento-card__header">
+            <img src="assets/images/avatar-padrao.svg" alt="Foto de Rafael Costa" class="depoimento-card__avatar" loading="lazy">
+            <div class="depoimento-card__info">
+              <h4 class="depoimento-card__name">Rafael Costa</h4>
+              <div class="depoimento-card__stars" aria-label="5 estrelas">★★★★★</div>
+            </div>
+          </div>
+          <blockquote class="depoimento-card__text">
+            "Ambiente muito agradável e profissionais extremamente competentes.
+            Saí de lá me sentindo outra pessoa. Virei cliente fiel!"
+          </blockquote>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="depoimento-card" role="group" aria-roledescription="slide" aria-label="3 de 6">
+          <div class="depoimento-card__header">
+            <img src="assets/images/avatar-padrao.svg" alt="Foto de Bruno Almeida" class="depoimento-card__avatar" loading="lazy">
+            <div class="depoimento-card__info">
+              <h4 class="depoimento-card__name">Bruno Almeida</h4>
+              <div class="depoimento-card__stars" aria-label="5 estrelas">★★★★★</div>
+            </div>
+          </div>
+          <blockquote class="depoimento-card__text">
+            "Pontualidade impecável e corte perfeito. O combo corte + barba vale muito a pena.
+            Produtos de primeira qualidade. Nota 10!"
+          </blockquote>
+        </div>
+
+        <!-- Depoimento 4 -->
+        <div class="depoimento-card" role="group" aria-roledescription="slide" aria-label="4 de 6">
+          <div class="depoimento-card__header">
+            <img src="assets/images/avatar-padrao.svg" alt="Foto de Thiago Santos" class="depoimento-card__avatar" loading="lazy">
+            <div class="depoimento-card__info">
+              <h4 class="depoimento-card__name">Thiago Santos</h4>
+              <div class="depoimento-card__stars" aria-label="5 estrelas">★★★★★</div>
+            </div>
+          </div>
+          <blockquote class="depoimento-card__text">
+            "Já passei por várias barbearias e nenhuma se compara à do Cazé.
+            O cuidado com cada detalhe é impressionante. Parabéns à equipe!"
+          </blockquote>
+        </div>
+
+        <!-- Depoimento 5 -->
+        <div class="depoimento-card" role="group" aria-roledescription="slide" aria-label="5 de 6">
+          <div class="depoimento-card__header">
+            <img src="assets/images/avatar-padrao.svg" alt="Foto de Diego Oliveira" class="depoimento-card__avatar" loading="lazy">
+            <div class="depoimento-card__info">
+              <h4 class="depoimento-card__name">Diego Oliveira</h4>
+              <div class="depoimento-card__stars" aria-label="5 estrelas">★★★★★</div>
+            </div>
+          </div>
+          <blockquote class="depoimento-card__text">
+            "Fiz a pigmentação capilar e o resultado ficou incrível! Super natural.
+            Profissionais qualificados e ambiente muito acolhedor."
+          </blockquote>
+        </div>
+
+        <!-- Depoimento 6 -->
+        <div class="depoimento-card" role="group" aria-roledescription="slide" aria-label="6 de 6">
+          <div class="depoimento-card__header">
+            <img src="assets/images/avatar-padrao.svg" alt="Foto de André Ferreira" class="depoimento-card__avatar" loading="lazy">
+            <div class="depoimento-card__info">
+              <h4 class="depoimento-card__name">André Ferreira</h4>
+              <div class="depoimento-card__stars" aria-label="5 estrelas">★★★★★</div>
+            </div>
+          </div>
+          <blockquote class="depoimento-card__text">
+            "Atendimento do início ao fim impecável. Desde o agendamento pelo WhatsApp
+            até a finalização do corte. Experiência premium de verdade!"
+          </blockquote>
+        </div>
+
+      </div>
+
+      <!-- Controles do carrossel -->
+      <div class="depoimentos__controls">
+        <button class="depoimentos__btn depoimentos__btn--prev" id="depPrev" aria-label="Ver depoimento anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </button>
+        <div class="depoimentos__indicators" id="depIndicators"></div>
+        <button class="depoimentos__btn depoimentos__btn--next" id="depNext" aria-label="Ver próximo depoimento">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ============================================
+     LOCALIZAÇÃO
+     ============================================ -->
+<section class="section localizacao" id="localizacao">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">Onde estamos</span>
+      <h2 class="section-title">Nossa <span class="gradient-text">Localização</span></h2>
+    </div>
+
+    <div class="localizacao__grid fade-in">
+      <!-- Informações -->
+      <div class="localizacao__info">
+        <div class="localizacao__item">
+          <div class="localizacao__item-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="localizacao__item-title">Endereço</h4>
+            <p class="localizacao__item-text">Rua das Flores, 123 — Centro<br>São Paulo — SP, 01000-000</p>
+          </div>
+        </div>
+
+        <div class="localizacao__item">
+          <div class="localizacao__item-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="localizacao__item-title">Telefone</h4>
+            <p class="localizacao__item-text">(21) 97198-4478</p>
+          </div>
+        </div>
+
+        <div class="localizacao__item">
+          <div class="localizacao__item-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="localizacao__item-title">WhatsApp</h4>
+            <p class="localizacao__item-text">(21) 97198-4478</p>
+          </div>
+        </div>
+
+        <div class="localizacao__item">
+          <div class="localizacao__item-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="localizacao__item-title">Horário de Funcionamento</h4>
+            <p class="localizacao__item-text">
+              Seg a Sex: 9h às 20h<br>
+              Sábado: 9h às 18h<br>
+              Domingo: Fechado
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mapa incorporado -->
+      <div class="localizacao__mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83327.56064227411!2d-123.20630523289155!3d49.257706149792625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143a94fb3%3A0xbb9196ea9b81f38b!2sVancouver%2C%20BC%2C%20Canad%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1783734609233!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Localização Barbearia do Cazé">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ============================================
+       FAQ — Perguntas Frequentes
+       ============================================ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Tire suas dúvidas</span>
+        <h2 class="section-title">Perguntas <span class="gradient-text">Frequentes</span></h2>
+      </div>
+
+      <div class="faq__list fade-in">
+        <!-- FAQ 1 -->
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Preciso agendar com antecedência?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Recomendamos o agendamento pelo WhatsApp para garantir seu horário, mas também atendemos por ordem de chegada quando há disponibilidade.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Vocês aceitam cartão de crédito?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Sim! Aceitamos cartão de crédito, débito, PIX e dinheiro. Facilitamos todas as formas de pagamento para sua comodidade.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Quanto tempo demora um corte?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Um corte masculino leva em média 30 a 45 minutos, dependendo do estilo e da complexidade. Trabalhamos com calma para garantir o melhor resultado.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Vocês fazem barba?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Sim! Oferecemos serviço completo de barba, incluindo modelagem, alinhamento, hidratação e toalha quente. Também temos o combo Corte + Barba com desconto especial.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Qual a faixa de preço dos serviços?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Nossos serviços variam de R$ 25,00 (sobrancelha) a R$ 120,00 (pigmentação). O corte masculino custa R$ 45,00 e a barba R$ 35,00. Confira a seção de Serviços para mais detalhes.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Vocês atendem crianças?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Sim! Atendemos crianças a partir de 5 anos com o mesmo carinho e profissionalismo. O corte infantil tem o mesmo valor do adulto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contato" id="contato">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Fale conosco</span>
+        <h2 class="section-title">Agende seu <span class="gradient-text">Atendimento</span></h2>
+        <p class="section-subtitle">
+          Clique no botão abaixo e agende diretamente pelo WhatsApp. Resposta rápida garantida!
+        </p>
+      </div>
+
+      <div class="contato__wrapper fade-in">
+        <div class="contato__cta-card">
+          <div class="contato__cta-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <h3 class="contato__cta-title">Agende pelo WhatsApp</h3>
+          <p class="contato__cta-text">
+            É rápido, prático e sem complicação. Basta clicar no botão abaixo
+            e escolher o melhor horário para você.
+          </p>
+          <a href="https://wa.me/5521971984478?text=Olá! Gostaria de agendar um horário na Barbearia do Cazé."
+             target="_blank"
+             class="btn btn--whatsapp btn--lg">
+            <svg class="btn__icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Coluna 1 — Logo e descrição -->
+        <div class="footer__col">
+          <a href="#hero" class="footer__logo">
+           <img src="assets/icons/favicon32.png" alt="Logo Barbearia do Cazé" class="footer__logo-img">
+           <span class="footer__logo-text">Barbearia <span class="highlight">do Cazé</span></span>
+          </a>
+          <p class="footer__desc">
+            Transformando estilos e elevando a autoestima masculina desde 2019.
+            Seu visual em boas mãos.
+          </p>
+          <!-- Redes sociais -->
+          <div class="footer__social">
+            <a href="https://www.instagram.com/m4chado7.web/" class="footer__social-link" aria-label="Instagram" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/m4chado7.web/" class="footer__social-link" aria-label="Facebook" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://www.tiktok.com/@m4chado7.web" class="footer__social-link" aria-label="TikTok" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M9 12a4 4 0 104 4V4a5 5 0 005 5"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@m4chado7.web" class="footer__social-link" aria-label="YouTube" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2 — Links rápidos -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Links Rápidos</h4>
+          <ul class="footer__links">
+            <li><a href="#hero" class="footer__link">Início</a></li>
+            <li><a href="#sobre" class="footer__link">Sobre</a></li>
+            <li><a href="#servicos" class="footer__link">Serviços</a></li>
+            <li><a href="#galeria" class="footer__link">Galeria</a></li>
+            <li><a href="#depoimentos" class="footer__link">Depoimentos</a></li>
+            <li><a href="#contato" class="footer__link">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3 — Serviços -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Serviços</h4>
+          <ul class="footer__links">
+            <li><a href="#servicos" class="footer__link">Corte Masculino</a></li>
+            <li><a href="#servicos" class="footer__link">Barba</a></li>
+            <li><a href="#servicos" class="footer__link">Pigmentação</a></li>
+            <li><a href="#servicos" class="footer__link">Sobrancelha</a></li>
+            <li><a href="#servicos" class="footer__link">Combo Corte + Barba</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4 — Contato -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Contato</h4>
+          <ul class="footer__contact">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Rua das Flores, 123 — Centro
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              (21) 97198-4478
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              contato.carlosmachadoweb@gmail.com
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="currentYear"></span> Barbearia do Cazé. Todos os direitos reservados.
+        </p>
+        <p class="footer__credit">
+          Feito por <a href="https://carlosmachadowebsite.vercel.app/" target="_blank" rel="noopener noreferrer">Eduardo Machado - m4chado7.</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       BOTÃO VOLTAR AO TOPO
+       ============================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5521971984478?text=Olá! Gostaria de agendar um horário."
+     target="_blank"
+     class="whatsapp-float"
+     aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- JavaScript Principal -->
+  <script src="js/script.js"></script>
+</body>
+</html>
