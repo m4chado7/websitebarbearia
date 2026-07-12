@@ -16,7 +16,7 @@ O projeto foi desenvolvido como parte do meu portfólio, simulando um site profi
 
 🔗 **Acesse o projeto online:**
 
-https://ladingbarbeariacaze.vercel.app
+https://landingbarbeariacaze.vercel.app
 
 ---
 
