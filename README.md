@@ -8,9 +8,7 @@ O projeto foi desenvolvido como parte do meu portfólio, simulando um site profi
 
 ## 📸 Preview
 
-```md
 ![Preview do Projeto](./markdown/apresentacao.png)
-```
 
 ---
 
